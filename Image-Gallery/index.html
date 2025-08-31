@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">DARK GALLERY</h1>
+            <p class="subtitle">Curated visual experiences</p>
+        </div>
+
+       
+
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading stunning visuals...</p>
+        </div>
+
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <button class="lightbox-nav lightbox-prev" onclick="prevImage()">&#8249;</button>
+            <button class="lightbox-nav lightbox-next" onclick="nextImage()">&#8250;</button>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <div class="lightbox-title" id="lightbox-title"></div>
+                <div class="lightbox-author" id="lightbox-author"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
